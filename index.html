@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PILMUD — Pilihan Lebih Mudah</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <h2 class="logo">PILMUD<span>.</span></h2>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <p class="tagline">BINGUNG? SINI DULU.</p>
+
+            <h1>
+                Hidup nggak nunggu<br>
+                kamu selesai bingung.
+            </h1>
+
+            <h2>Jadi, mau pilih apa?</h2>
+
+            <p class="description">
+                Mau ini, mau itu, ujung-ujungnya nggak jadi?
+                Udah, sini. Biar PILMUD bantu kamu menentukan pilihan.
+            </p>
+
+            <button class="main-button" onclick="goToDecision()">
+                BANTU GUE MILIH ✨
+            </button>
+
+        </section>
+
+
+        <!-- DECISION SECTION -->
+        <section class="decision" id="features">
+
+            <!-- CATEGORY SECTION -->
+            <div class="category-section" id="categorySection">
+
+                <h2>Mau menentukan apa hari ini?</h2>
+
+                <p>
+                    Pilih kategori yang sesuai dengan kebingunganmu.
+                </p>
+
+                <div class="category-list">
+
+                    <button onclick="selectCategory('makanan')">
+                        🍜 Makanan
+                    </button>
+
+                    <button onclick="selectCategory('film')">
+                        🎬 Film
+                    </button>
+
+                    <button onclick="selectCategory('nongkrong')">
+                        ☕ Tempat Nongkrong
+                    </button>
+
+                    <button onclick="selectCategory('liburan')">
+                        ✈️ Liburan
+                    </button>
+
+                    <button onclick="selectCategory('random')">
+                        🎲 Random
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MANUAL INPUT SECTION -->
+            <div class="manual-input-section" id="manualInputSection">
+
+                <p class="tagline">LET PILMUD DECIDE</p>
+
+                <h2>Bingung mau pilih yang mana?</h2>
+
+                <p>
+                    Masukkan pilihanmu. Biar PILMUD yang menentukan.
+                </p>
+
+                <textarea
+                    id="options"
+                    placeholder="Pilihan 1
+                    Pilihan 2
+                    Pilihan 3"
+                ></textarea>
+
+                <button class="main-button" onclick="makeDecision()">
+                    PILIHKAN UNTUK GUE 🎲
+                </button>
+
+                <!-- RESULT SECTION -->
+                <div id="result"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
